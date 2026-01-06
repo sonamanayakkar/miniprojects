@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Bungee+Spice&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h2{
+     font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+}
+span{
+    font-size: 30px;
+     font-family: "Rajdhani", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+h3{
+      font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+    color: yellow;
+}
+
+
+.container {
+    position: relative;
+
+      background-image: url(../image/../image/nature\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+ 
+    height: 100vh;
+}
+
+.archery {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/../image/table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.man{
+    z-index: 1;
+    right: 0;
+    
+   
+    top: 30%;
+    position: absolute;
+    transition: 1s;
+    width: 300px;
+    height: 400px;
+    background-image: url(../image/green\ man.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.arrow {
+    position: absolute;
+    right: 90px;
+    top: 30.5%;
+    width: 180px;
+    height: 300px;
+    background-image: url(../image/right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.arrow2{
+    position: absolute;
+    right: 90px;
+   
+   top: 30.5%;
+    width: 180px;
+    height: 300px;
+    background-image: url(../image/right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+ .shoot1{
+   transform: translate(-1000px,-40px);
+     transition: 0.5s;
+}
+
+ .shoot2{
+    transform: translate(-1000px,30px);
+     transition: 0.5s;
+}
+.shoot3{
+     transform: translate(-1000px,-7px);
+     transition: 0.5s;
+}
+
+.return{
+    right: 20px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.button{
+    position: absolute;
+    right:30%;
+    bottom: 10%;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.499);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.button img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.reset img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reset{
+      right: 20%;
+    bottom: 10%;
+}
+
+.blink{
+    filter: drop-shadow(0px 0px 2px red);
+    box-shadow: 0px 0px 10px 5px rgb(115, 3, 3);
+}
+
+
+.rangefix{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.547);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+}
+.rangefix .range{
+    color: white;
+    border-radius: 30px;
+  
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.693);
+    width: 100px;
+    height: 20px;
+}
+
+.shortrange{
+     position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/../image/table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shortshoot1{
+     transform: translate(-400px,-7px);
+     transition: 0.5s;
+}
+.shortshoot2{
+     transform: translate(-400px,-7px);
+     transition: 0.5s;
+}
+.shortshoot3{
+     transform: translate(-400px,-7px);
+     transition: 0.5s;
+}
+
+
+.mediumshoot1{
+     transform: translate(-700px,-30px);
+     transition: 0.5s;
+}
+.mediumshoot2{
+     transform: translate(-700px,-7px);
+     transition: 0.5s;
+}
+.mediumshoot3{
+     transform: translate(-700px,-7px);
+     transition: 0.5s;
+}
+.longshoot1{
+      transform: translate(-1000px,-40px);
+     transition: 0.5s;
+}
+.longshoot2{
+     transform: translate(-1000px,30px);
+     transition: 0.5s;
+}
+.longshoot3{
+      transform: translate(-1000px,-7px);
+     transition: 0.5s;
+}
+
+.mediumrange{
+     position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/../image/table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+    /* .longrange{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 400px;
+        height: 400px;
+        background-image: url(../image/../image/table.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } */
+
+
+
+
+.blink2{
+   
+    animation: blink 1s  infinite   alternate ;
+}
+
+
+/* ---------------background bgm ------------*/
+
+
+.speaker{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 20px;
+    left: 20px;
+    width: 20%;
+}
+.sp{
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 10px;
+    border-radius: 50%;
+    border: black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.speaker i{
+    color: white;
+   font-size: 40px;
+}
+@keyframes blink {
+    10%{
+         filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+        box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+    }
+    20%{
+         filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+        box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+    }
+
+    50%{
+         filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+        box-shadow: 0px 0px 50px 5px rgb(255, 255, 255);
+    }
+    80%{
+         filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+        box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+    }
+
+    100%{
+         filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+        box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+     border: black solid;
+     height: 100vh;
+     background-color: black;
+}
+
+.container{
+    border: black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h1{
+    font-family: "Turret Road", sans-serif;
+    color: white;
+}
+.container h1{
+    font-size: 7rem;
+    color: white;
+      font-family: "Honk", system-ui;
+ 
+}

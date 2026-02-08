@@ -25,10 +25,12 @@ let action = () => {
 
 
         setInterval(() => {
-            details.style.display = "flex";
-
             let dob = new Date(calender.value)
             let live = new Date();
+            calender.style.border = "black solid 1px";
+            details.style.display = "flex";
+
+
 
 
             //year
@@ -50,7 +52,7 @@ let action = () => {
             function remaindays(date1) {
                 if (date1 < 0) {
                     month1--;
-                    let prevMonth = new Date(live.getFullYear(), live.getMonth(), 0);
+                    let prevMonth = new Date(live.getFullYear(), live.getMonth(), 0);  // previous month total date
                     console.log(prevMonth.getMonth());
                     date1 += prevMonth.getDate()
                     days.innerText = date1 + " Days"
@@ -65,8 +67,6 @@ let action = () => {
                 year1--;
                 month1 += 12
                 console.log(month1 + " Months");
-
-
                 month.innerText = month1 + " Months "
 
 
@@ -100,7 +100,9 @@ let action = () => {
     }
 
     else {
+        calender.style.border = "red solid 2px";
         alert("Please Enter your Date of Birth")
+
     }
 
 
